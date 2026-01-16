@@ -52,7 +52,7 @@ compile_commands.json
 *.sln
 *.vcxproj
 *.user
-
+*.pdb
 # CLion / JetBrains
 .idea/
 cmake-build-*/
