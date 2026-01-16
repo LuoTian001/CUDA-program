@@ -4,11 +4,10 @@
             "name": "CUDA (Windows)",
             "includePath": [
                 "${workspaceFolder}/**",
-                "${workspaceFolder}/include",
-                "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include"
+                "${workspaceFolder}/include"
             ],
             "defines": ["_DEBUG", "UNICODE", "_UNICODE"],
-            "compilerPath": "cl.exe",
+            "compilerPath": "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\bin\\nvcc.exe",
             "cStandard": "c17",
             "cppStandard": "c++17",
             "intelliSenseMode": "windows-msvc-x64"

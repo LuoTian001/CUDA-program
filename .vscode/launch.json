@@ -5,7 +5,7 @@
             "name": "CUDA: Debug Active File",
             "type": "cppvsdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/debug/${fileBasenameNoExtension}.exe", 
+            "program": "${workspaceFolder}/build/Debug/cuda_main.exe", 
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
