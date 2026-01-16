@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "CUDA: Debug Active File",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/debug/${fileBasenameNoExtension}.exe", 
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "console": "integratedTerminal",
+            "preLaunchTask": "C/C++: nvcc build active file"
+        }
+    ]
+}

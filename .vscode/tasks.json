@@ -1,0 +1,35 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "C/C++: nvcc build project",
+            "command": "nvcc",
+            "args": [
+                "-g",
+                "-G",
+                "-I", "${workspaceFolder}\\include",
+                "-I", "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\include",
+                "-L", "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\lib\\x64",
+                "-lcudart",
+                "-lcublas",
+                "-lcurand",
+                "-arch=sm_86",
+                "-O3",
+                "-o", "${workspaceFolder}\\build\\${fileBasenameNoExtension}.exe",
+                "${workspaceFolder}\\src\\main.cu"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$nvcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "编译 src 目录下所有 cu 文件"
+        }
+    ]
+}
