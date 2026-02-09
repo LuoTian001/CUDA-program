@@ -5,7 +5,7 @@
 #include <cuda_runtime.h>
 #include <device_launch_parameters.h>
 
-const int N = 1 << 12;
+const int N = 1 << 24;
 const int BLOCK_SIZE = 64;
 
 // Kernel 1: High Divergence
@@ -95,7 +95,7 @@ void run_test(const char *name, void(*kernel)(float*), float* d_data, int blocks
 
 }
 
-int main() 
+int main()
 {
     size_t bytes = N * sizeof(float);
     float* d_data;

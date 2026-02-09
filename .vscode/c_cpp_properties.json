@@ -4,10 +4,17 @@
             "name": "CUDA (Windows)",
             "includePath": [
                 "${workspaceFolder}/**",
-                "${workspaceFolder}/include"
+                "${workspaceFolder}/include",
+                "C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.8/include"
             ],
-            "defines": ["_DEBUG", "UNICODE", "_UNICODE"],
-            "compilerPath": "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\bin\\nvcc.exe",
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE",
+                "__CUDACC__"
+            ],
+            "compilerPath": "D:/Apps/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/HostX64/x64/cl.exe",
+            "windowsSdkVersion": "10.0.26100.0",
             "cStandard": "c17",
             "cppStandard": "c++17",
             "intelliSenseMode": "windows-msvc-x64"

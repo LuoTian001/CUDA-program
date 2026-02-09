@@ -71,4 +71,5 @@ cmake-build-*/
 # NVIDIA Nsight / nvprof 输出
 *.nvprof
 *.nsys-rep
+*.ncu-rep
 *.qdrep
